@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Marketing Dashboard</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Email Campaign Manager</h1>
+        <div id="auth-section">
+            <button id="connect-mailchimp">Connect Mailchimp</button>
+        </div>
+        <div id="campaign-section" style="display:none;">
+            <h2>Create New Campaign</h2>
+            <form id="campaign-form">
+                <input type="text" id="subject" placeholder="Subject" required>
+                <textarea id="content" placeholder="Email content" required></textarea>
+                <button type="submit">Send Test Email</button>
+            </form>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+    <script src="https://chimpstatic.com/mcjs-connected/js/users/your-api-key.js"></script>
+</body>
+</html>
